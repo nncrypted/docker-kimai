@@ -19,6 +19,7 @@ RUN \
     php83-pecl-redis \
     php83-tokenizer \
     php83-xmlreader \
+    mariadb-client \
     php83-xsl && \
   echo "**** configure php-fpm to pass env vars ****" && \
   sed -E -i 's/^;?clear_env ?=.*$/clear_env = no/g' /etc/php83/php-fpm.d/www.conf && \
